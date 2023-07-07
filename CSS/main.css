@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #000000ef;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.card {
+    background-color: #444;
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card-body {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.form-control {
+    background-color: #44444457;
+    color: #fff;
+    font-weight: bold;
+}
+
+.form-control::placeholder {
+    color: rgba(110, 101, 83, 0.897);
+    font-weight: bold;
+}
+
+.form-control:hover {
+    background-color: #0d6dfd67;
+}
+
+.form-control:focus {
+    background-color: #000000ef;
+    color: #fff;
+}
+
+.container .card .card-body button {
+    color: #fff;
+    font-weight: bold;
+}
+
+.none {
+    display: none;
+}
+
+.card-lightMood{
+    background-color: #aaa;
+}
+.card-body-lightMood{
+    background-color: #fff;
+}
+.form-control-light{
+    color: #000;
+}
+
+
+/*==============================================================================*/
+
+.load{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.575);
+    z-index: 15456486;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.load .spinner{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 10px solid white;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes move {
+    to{
+        transform: rotate(360deg);
+    }
+    from {
+        transform: rotate(-360deg);
+
+    }
+}

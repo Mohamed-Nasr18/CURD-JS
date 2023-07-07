@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURD Operation</title>
+
+    <!-- font Awesome CSS file -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+
+    <!-- My CSS file -->
+    <link rel="stylesheet" href="./CSS/main.css">
+
+</head>
+
+<body>
+
+    <button id="btnMood" class="btn btn-light fixed-top col-md-1">Light Mood</button>
+
+    <h1 class="text-center text-success mt-4">Our Prouduct</h1>
+    <div class="container col-lg-10">
+        <div id="card" class="card">
+            <div id="card-body" class="card-body">
+                <div class="row">
+                    <h2 id="headingOne" class="text-center text-success my-2">Add New Prouduct</h2>
+                    <div class="col-md-12 my-3">
+                        <div class="form-group">
+                            <input type="text" id="title" class="form-control" placeholder="Title">
+                        </div>
+                    </div>
+                    <div id="cost" class="row">
+                        <div class="col-md-3 my-2">
+                            <div class="form-group">
+                                <input type="number" id="price" class="form-control" placeholder="Price">
+                            </div>
+                        </div>
+                        <div class="col-md-3 my-2">
+                            <div class="form-group">
+                                <input type="number" id="taxes" class="form-control" placeholder="Taxes %">
+                            </div>
+                        </div>
+                        <div class="col-md-3 my-2">
+                            <div class="form-group">
+                                <input type="number" id="transfer-cost" class="form-control"
+                                    placeholder="Transfer Cost">
+                            </div>
+                        </div>
+                        <div class="col-md-3 my-2">
+                            <div class="form-group">
+                                <input type="number" id="discound" class="form-control" placeholder="Discound %">
+                            </div>
+                        </div>
+                        <div class="col-md-3 my-2">
+                            <div class="form-group">
+                                <input type="text" id="total" class="form-control" placeholder="Total">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 my-2">
+                        <div class="form-group">
+                            <input type="text" id="count" class="form-control" placeholder="Count Number">
+                        </div>
+                    </div>
+                    <div class="col-md-12 my-2">
+                        <div class="form-group">
+                            <input type="text" id="department" class="form-control" placeholder="Department">
+                        </div>
+                    </div>
+
+                    <div id="validationMessage" class="none alert alert-danger">
+                        
+                    </div>
+
+                    <div class="d-grid">
+                        <button id="btn-create" class="btn btn-primary my-2">Create Prouduct</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container col-lg-10 mt-5">
+        <div id="cardTwo" class="card">
+            <div id="card-bodyTwo" class="card-body">
+                <h2 class="text-center text-success mb-4">Prouduct List</h2>
+
+                <table id="table-Data" class="table table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>taxes</th>
+                        <th>T. Cost</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                        <th>count</th>
+                        <th>Dipartment</th>
+                        <th colspan="2">Action</th>
+                    </tr>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+                <div class="d-grid">
+                    <button id="deleteAll" class="btn btn-danger my-2 none">Delete All <span> </span> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="load">
+        <div class="spinner">
+            
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS file-->
+    <script src="./JavaScript/bootstrap.bundle.min.js"></script>
+
+    <!-- My JS file-->
+    <script src="./JavaScript/app.js"></script>
+</body>
+
+</html>
